@@ -1,0 +1,17 @@
+.navbar {
+    background-color: #ffe600;
+}
+
+header a {
+    color: black !important;
+}
+
+.bg-yellow {
+    background-color: #ffe600 !important;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}

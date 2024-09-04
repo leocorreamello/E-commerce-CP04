@@ -6,54 +6,325 @@
     <meta name="Author" content="Leonardo Mello">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>E-commerce</title>
+    <style>
+        header a {
+            color: black !important;
+        }
+        header button {
+            background-color: rgba(48, 48, 48, 0.548) !important;
+            border-color: black !important;
+        }
+        .btn-outline-success {
+            color: white !important;
+            border-color: white !important;
+        }
+        .btn-outline-success:hover {
+            background-color: white !important;
+            color: black !important;
+        }
+        header {
+            margin-bottom: 0 !important;
+        }
+        .carousel {
+            margin-top: 0 !important;
+        }
+    </style>
+    <title>Página Principal</title>
 </head>
+
 <body>
-    
-    <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-yellow">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="Logo" height="50px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pets.html">Pets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="roupas.html">Roupas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="super.html">Supermercado</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bebes.html">Bebes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Contato</a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            <a href=""><img src="https://imgs.search.brave.com/gEPeflzHeITufoQk6vyD56Ve_nnlkMx0MA0pv5DiGto/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZW5zZW1vbGRlcy5j/b20uYnIvd3AtY29u/dGVudC91cGxvYWRz/LzIwMjAvMDcvJUMz/JThEY29uZS1DYXJy/aW5oby1kZS1Db21w/cmFzLVBORy0zMDB4/MjU3LnBuZw" alt="carrinho" width="30px" style="margin-left: 20px;"></a>
+          </form>
+        </div>
+      </nav>
+    </header>
 
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(atual)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Desativado</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                  <a class="dropdown-item" href="#">Item</a>
-                  <a class="dropdown-item" href="#">Outro item</a>
-                  <a class="dropdown-item" href="#">Algum outro item</a>
+    <main role="main">
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide" src="img/slide1.png" alt="Primeira Oferta" width="100%">
+          </div>
+          <div class="carousel-item">
+            <img class="second-slide" src="img/slide2.png" alt="Segunda Oferta" width="100%">
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide" src="img/slide3.png" alt="Terceira Oferta" width="100%">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Voltar</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Avançar</span>
+        </a>
+      </div>
+      <br>
+      <br>
+
+      <!-- Mensagens de marketing e outras featurezinhas
+      ================================================== -->
+      <!-- Envolve o resto da página em outro container, para centralizar todo o conteúdo. -->
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <h1 style="text-align: center;">Pets</h1>
+          <br>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" src="https://http2.mlstatic.com/D_Q_NP_756491-MLU74134643862_012024-V.webp" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Pedigree Biscrok petisco para cães adultos 1kg</p>
+                  <h1>R$28,99</h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                  </div>
                 </div>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Pesquisa" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-            </form>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" src="https://http2.mlstatic.com/D_Q_NP_658336-MLU76507376717_052024-V.webp" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <p class="card-text">Suplemento Omega 3 Dog 1000mg Organnact 90 Comprimidos</p>
+                  <h1>R$152</h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" src="https://http2.mlstatic.com/D_Q_NP_744388-MLB48036950787_102021-V.webp" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Ração Origens Raças Específicas Shih Tzu E Lhasa Apso Ad 10,1kg</p>
+                  <h1>R$114,95</h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </nav>
-    
-        <main role="main" class="container">
-    
-          <div class="starter-template">
-            <h1>Template Bootstrap inicial</h1>
-            <p class="lead">Use este documento como uma maneira de iniciar um novo projeto, rapidamente.<br>Tudo oquê você começa é com este texto e um documento HTML (quase vazio).</p>
+          <h1 style="text-align: center;">Roupas</h1>
+          <br>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" src="https://http2.mlstatic.com/D_Q_NP_950225-MLB75287919103_032024-P.webp" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Kit Com 10 Cuecas Boxer Masculina Microfibra Original</p>
+                  <h1>R$78,90</h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" src="https://http2.mlstatic.com/D_Q_NP_640415-MLB73001114267_112023-P.webp" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <p class="card-text">Kit 5 Camisetas Parvori Dry Fit Academia Esportes - Slim Fit</p>
+                  <h1>R$114</h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" src="https://http2.mlstatic.com/D_Q_NP_968046-MLB70231545754_072023-P.webp" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Shorts Jeans Feminino Cordão Cintura Alta Levanta Bumbum</p>
+                  <h1>R$47</h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-    
-        </main>
-      </body>
+          <h1 style="text-align: center;">Supermercado</h1>
+          <br>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" src="https://http2.mlstatic.com/D_Q_NP_863648-MLU75994665534_052024-P.webp" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Leite Em Pó Integral Italac 750g</p>
+                  <h1>R$29</h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" src="https://http2.mlstatic.com/D_Q_NP_784181-MLB74346714511_022024-P.webp" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <p class="card-text">Kit Yopro Coco Com Batata Doce 15g 250ml - 12 Unidades</p>
+                  <h1>R$95,43</h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" src="https://http2.mlstatic.com/D_Q_NP_825760-MLU78155285009_082024-P.webp" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Colgate total clean mint creme dental 180g 2 unidades</p>
+                  <h1>R$24,36</h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1 style="text-align: center;">Bebês</h1>
+          <br>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" src="https://http2.mlstatic.com/D_Q_NP_961459-MLU72637278799_112023-P.webp" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Carrinho Passeio Infantil Quadriciclo Maral Jip Jip Menino Cor Verde</p>
+                  <h1>R$269,99</h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" src="https://http2.mlstatic.com/D_Q_NP_861294-MLU74218923557_012024-P.webp" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <p class="card-text">Andador Para Bebês Infantil Musical Premium Mega Compras Cor Cinza</p>
+                  <h1>R$260,91</h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" src="https://http2.mlstatic.com/D_Q_NP_916486-MLA77291156907_062024-P.webp" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Fralda Pom Pom Protek Proteção De Mãe Mega Xg 38 Unidades</p>
+                  <h1>R$38, 32</h1>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- /.container -->
 
-</body>
+
+      <!-- FOOTER -->
+      <footer class="bg-yellow text-center text-lg-start">
+        <div class="text-center p-3">
+            <p class="float-right"><a href="#">Voltar ao topo</a></p>
+            <p>&copy; Leonardo & Gabriel, 2024 &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Principal JavaScript do Bootstrap
+    ================================================== -->
+    <!-- Foi colocado no final para a página carregar mais rápido -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </body>
 </html>
