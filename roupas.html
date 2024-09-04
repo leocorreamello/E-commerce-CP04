@@ -62,6 +62,25 @@
 
             <h1 style="text-align: center;">Roupas</h1>
             <br>
+            <aside class="col-md-3">
+              <h4>Filtros</h4>
+              <form>
+                  <div class="form-group">
+                      <label for="category">Categoria</label>
+                      <select class="form-control" id="category">
+                          <option>Todos</option>
+                          <option>Masculina</option>
+                          <option>Feminina</option>
+                          <option>Acessorios</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                      <label for="price-range">Faixa de Preço</label>
+                      <input type="range" class="form-control-range" id="price-range">
+                  </div>
+                  <button type="submit" class="btn btn-primary" style="background-color: rgb(0, 132, 255);">Aplicar</button>
+              </form>
+          </aside>
             <div class="row">
               <div class="col-md-4">
                 <div class="card mb-4 shadow-sm">

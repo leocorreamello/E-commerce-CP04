@@ -48,21 +48,36 @@
       </nav>
     </header>
 
+    
     <main role="main">
-
       <br>
       <br>
-
-      <!-- Mensagens de marketing e outras featurezinhas
-      ================================================== -->
-      <!-- Envolve o resto da página em outro container, para centralizar todo o conteúdo. -->
-
       <div class="album py-5 bg-light">
         <div class="container">
 
           <h1 style="text-align: center;">Pets</h1>
           <br>
+          <aside class="col-md-3">
+            <h4>Filtros</h4>
+            <form>
+                <div class="form-group">
+                    <label for="category">Categoria</label>
+                    <select class="form-control" id="category">
+                        <option>Todos</option>
+                        <option>Ração</option>
+                        <option>Medicamentos</option>
+                        <option>Objetos</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="price-range">Faixa de Preço</label>
+                    <input type="range" class="form-control-range" id="price-range">
+                </div>
+                <button type="submit" class="btn btn-primary" style="background-color: rgb(0, 132, 255);">Aplicar</button>
+            </form>
+        </aside>
           <div class="row">
+            
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="https://http2.mlstatic.com/D_Q_NP_756491-MLU74134643862_012024-V.webp" alt="Card image cap">
@@ -140,6 +155,7 @@
                 </div>
               </div>
           </div>
+          
         <!-- /.container -->
 
 
