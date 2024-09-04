@@ -15,3 +15,36 @@ footer {
     position: relative;
     bottom: 0;
 }
+header a {
+    color: black !important;
+}
+header button {
+    background-color: rgba(48, 48, 48, 0.548) !important;
+    border-color: black !important;
+}
+.btn-outline-success {
+    color: white !important;
+    border-color: white !important;
+}
+.btn-outline-success:hover {
+    background-color: white !important;
+    color: black !important;
+}
+header {
+    margin-bottom: 0 !important;
+}
+.carousel {
+    margin-top: 0 !important;
+}
+.album .btn {
+    display: block;
+    margin: 10px auto; /* Centraliza os botões */
+    background-color: #000; /* Cor de fundo preta */
+    color: #fff; /* Cor do texto branca */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    padding: 10px 20px; /* Espaçamento interno */
+}
+.album .btn:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}

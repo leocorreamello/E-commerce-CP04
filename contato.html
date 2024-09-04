@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Leonardo Mello">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+    <title>Contato</title>
+</head>
+
+<body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-yellow">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="Logo" height="50px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pets.html">Pets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="roupas.html">Roupas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="super.html">Supermercado</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bebes.html">Bebes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Contato <span class="sr-only">(atual)</span></a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            <a href=""><img src="https://imgs.search.brave.com/gEPeflzHeITufoQk6vyD56Ve_nnlkMx0MA0pv5DiGto/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZW5zZW1vbGRlcy5j/b20uYnIvd3AtY29u/dGVudC91cGxvYWRz/LzIwMjAvMDcvJUMz/JThEY29uZS1DYXJy/aW5oby1kZS1Db21w/cmFzLVBORy0zMDB4/MjU3LnBuZw" alt="carrinho" width="30px" style="margin-left: 20px;"></a>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <br>
+    <br>
+
+    <main role="bg-light">
+        <div class="container">
+            <div class="py-5 text-center">
+              <img class="d-block mx-auto mb-4" src="img/logo.png" alt="" width="140">
+              <h2>Com o que podemos ajudar?</h2>
+              <p class="lead">Abaixo, preencha os campos, caso queria falar connosco.</p>
+            </div>
+      
+            <div class="row">
+              <div class="col-md-8 order-md-1">
+                <h4 class="mb-3">Preencha os campos abaixo</h4>
+                <form class="needs-validation" novalidate>
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="primeiroNome">Nome</label>
+                      <input type="text" class="form-control" id="primeiroNome" placeholder="" value="" required>
+                      <div class="invalid-feedback">
+                        É obrigatório inserir um nome válido.
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="sobrenome">Sobrenome</label>
+                      <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required>
+                      <div class="invalid-feedback">
+                        É obrigatório inserir um sobre nome válido.
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="mb-3">
+                    <label for="email">Email <span class="text-muted">(Opcional)</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="fulano@exemplo.com">
+                    <div class="invalid-feedback">
+                      Por favor, insira um endereço de e-mail válido, para atualizações de entrega.
+                    </div>
+                  </div>
+      
+                  <div class="mb-3">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" class="form-control" id="endereco" placeholder="Rua dos bobos, nº 0" required>
+                    <div class="invalid-feedback">
+                      Por favor, insira seu endereço de entrega.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="endereco">Mensagen</label>
+                    <textarea type="text" class="form-control" id="endereco" required></textarea>
+                    <div class="invalid-feedback">
+                      Por favor, insira sua Mensagen.
+                    </div>
+                  </div>
+                  <button class="btn btn-primary btn-lg btn-block" type="submit">Finalizar o contato</button>
+                </form>
+              </div>
+            </div>
+      
+
+      <!-- Mensagens de marketing e outras featurezinhas
+      ================================================== -->
+      <!-- Envolve o resto da página em outro container, para centralizar todo o conteúdo. -->
+
+
+      <br>
+      <br>
+      <!-- FOOTER -->
+      <footer class="bg-yellow text-center text-lg-start">
+        <div class="text-center p-3">
+            <p class="float-right"><a href="#">Voltar ao topo</a></p>
+            <p>&copy; Leonardo & Gabriel, 2024 &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Principal JavaScript do Bootstrap
+    ================================================== -->
+    <!-- Foi colocado no final para a página carregar mais rápido -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </body>
+</html>
