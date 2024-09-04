@@ -3,5 +3,5 @@ Neste trabalho utilizamos tecnologias novas ensinadas em aula, como por exemplo 
 # Integrantes
 Leonardo Correa de Mello | RM555573 [Linkedin](https://www.linkedin.com/in/leocorreamello/)
 <br>
-Gabriel Alves | RM555355 [Linkedin](https://www.linkedin.com/in/leocorreamello/)
+Gabriel Alves | RM555355 [Linkedin](https://www.linkedin.com/in/gabriel-vara/)
 
